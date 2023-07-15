@@ -1,6 +1,6 @@
 let boxes = Array.from(document.getElementsByClassName('box'));
 let restartBtn = document.getElementById('restart');
-let playerText = document.getElementById('playerTerm');
+let playerText = document.getElementById('winnerText');
 let board = document.getElementById('playerBoard');
 console.log(boxes);
 let playerTerm = 'X';
@@ -35,7 +35,7 @@ restartBtn.addEventListener('click',()=>{
     boxes.forEach((item)=>{
         item.innerHTML='';
     })
-    playerText.innerHTML = "Tic Tac Toe"
+    
     playerTerm = 'X';
 })
 const winnerArr =[

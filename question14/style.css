@@ -50,4 +50,16 @@
 }
 .container .box:nth-child(6) ~ .box {
   border-bottom: none;
+}
+
+.displayWinner {
+  width: 80%;
+  margin: auto;
+  height: 200px;
+}
+.displayWinner h1 {
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: 800;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
