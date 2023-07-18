@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 150px 150px;
+  background: url("./image/background image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.top nav .logo {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+}
+.top nav .logo img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+}
+.top nav .logo h2 {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #241b1b;
+  font-weight: 700;
+}
+.top nav .menu {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.top .content {
+  padding-left: 450px;
+  width: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.top .content .subhead {
+  color: #fff;
+  line-height: 20px;
+}
+.top .content h1 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+}
+.top .content a {
+  color: yellow;
+  font-weight: 900;
+}
+
+.logo-decoration {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: absolute;
+  top: 570px;
+  width: calc(100% - 150px);
+  height: 150px;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
+}
+.logo-decoration img {
+  height: 100px;
+  mix-blend-mode: luminosity;
+}
+
+.review {
+  width: 100%;
+  padding: 70px 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.review .left {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+}
+.review .left h1 {
+  width: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.review .left p {
+  width: 75%;
+  line-height: 25px;
+}
+.review .left a {
+  color: grey;
+}
+.review .right {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+}
+.review .right .comment {
+  padding-top: 90px;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 70px 25px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.review .right .comment h4 {
+  line-height: 25px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+.review .right .user-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.review .right .user-profile .photo {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.review .right .user-profile .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.project {
+  width: 100%;
+}
+.project a {
+  color: grey;
+}
+.project .project-desc {
+  width: 70%;
+  display: flex;
+  padding-left: 75px;
+  padding-bottom: 70px;
+  justify-content: space-between;
+  gap: 30px;
+}
+.project .project-desc h1 {
+  width: 40%;
+  font-size: 40px;
+}
+.project .project-desc p {
+  width: 60%;
+  line-height: 25px;
+}
+.project .project1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.project .project1 .left {
+  width: 50%;
+  height: 50%;
+}
+.project .project1 .left img {
+  width: 100%;
+  height: 65vh;
+}
+.project .project1 .right {
+  width: 50%;
+  padding: 70px;
+}
+.project .project1 .right .content {
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.project .project1 .right .content h1 {
+  font-size: 40px;
+  line-height: 45px;
+}
+.project .project1 .right .content p {
+  line-height: 25px;
+}
+.project .comment {
+  position: absolute;
+  left: 23%;
+  top: 47vh;
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.project .comment h4 {
+  line-height: 20px;
+  font-style: italic;
+}
+.project .comment .user-profile {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .comment .user-profile .photo {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border-radius: 50%;
+}
+.project .comment .user-profile .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
