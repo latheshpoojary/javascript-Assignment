@@ -50,7 +50,6 @@
   justify-content: center;
 }
 .top .container1 .content {
-  border: 1px solid red;
   width: 80%;
   padding: 3rem 0rem;
   display: flex;
@@ -78,6 +77,7 @@
 .top .container1 .content .guids p {
   color: #ffffff;
 }
+
 .about {
   width: 100%;
   height: -moz-fit-content;
@@ -164,7 +164,6 @@
 }
 .about .box2 {
   width: 80% !important;
-  border: 1px solid red;
   display: flex;
 }
 .about .box2 .left {
@@ -173,46 +172,15 @@
 .about .box2 .left img {
   height: 330px;
 }
-.about .box2 .right {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
+.about .boot-box {
+  width: 80%;
 }
-.about .box2 .right .comment-top {
-  display: flex;
+.about .bg-blue {
+  border: 1px solid red;
+  background-color: #00317a;
 }
-.about .box2 .right .comment-top .info1, .about .box2 .right .comment-top .info2 {
-  padding: 2rem;
-}
-.about .box2 .right .comment-top .info1 {
-  background-color: #123468;
-}
-.about .box2 .right .comment-top .info1 p {
-  color: #fff;
-  font-size: 1rem;
-}
-.about .box2 .right .comment-top .info2 {
-  background-color: #dcdcdc;
-}
-.about .box2 .right .comment-top .info2 p {
-  color: #b9b0af;
-  font-size: 1rem;
-}
-.about .box2 .right .comment-top .info2 h5 {
-  font-style: italic;
-  font-size: 1rem;
-}
-.about .box2 .right .comment-bottom {
-  padding: 2rem;
-  background-color: #ffffff;
-}
-.about .box2 .right .comment-bottom p {
-  color: #b9b0af;
-  font-size: 20px;
-}
-.about .box2 .right .comment-bottom h5 {
-  text-align: center;
-  font-size: 1rem;
+.about .bg-light {
+  background-color: #b9b0af;
 }
 
 .contactus {
@@ -280,8 +248,91 @@
   color: #00317a;
 }
 
-.founder {
+.founders {
   padding: 5rem 10rem;
+}
+.founders h1 {
+  color: #00317a;
+  font: 1rem;
+  padding-bottom: 2rem;
+}
+.founders p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+.founders .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.founders .profile .founder .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+}
+.founders .profile .founder .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.founders .profile .founder h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #00317a;
+}
+footer .container2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 5rem;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+footer .container2 ul {
+  list-style: none;
+}
+footer .container2 ul li {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  display: flex;
+  gap: 1rem;
+}
+footer .container2 ul li:first-child {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+footer .container2 .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .container2 .social-media .logoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .container2 .social-media .logoes .logo {
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: #81bcba;
+  text-align: center;
+}
+footer .container2 .social-media img {
+  mix-blend-mode: multiply;
+}
+footer .container2 .social-media p {
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -305,18 +356,8 @@
   .about .box1 .inner-box1 .details {
     flex-direction: column;
   }
-  .about .box2 {
+  .about .boot-box {
     width: 100% !important;
-    display: block;
-  }
-  .about .box2 .left {
-    width: 100% !important;
-  }
-  .about .box2 .left img {
-    width: 100%;
-  }
-  .about .box2 .right {
-    border: 1px solid #b9b0af;
   }
   .floating-image {
     display: none;
@@ -325,6 +366,7 @@
     width: 100% !important;
     flex-direction: column;
     gap: 1rem;
+    background-color: transparent !important;
   }
   .divider .left {
     width: 100% !important;
@@ -336,5 +378,11 @@
   .divider .right form {
     width: 100%;
     position: static !important;
+  }
+  .founders {
+    padding: 1rem;
+  }
+  .container2 {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
