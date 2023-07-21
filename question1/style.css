@@ -211,6 +211,7 @@
 .project-list .image-field {
   height: 100%;
   width: 50%;
+  position: relative;
 }
 .project-list .image-field img {
   width: 100%;
@@ -242,8 +243,9 @@
 .project-list .feedback {
   position: absolute;
   width: min(400px, 30%);
-  left: 20%;
   top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
   padding: 1rem;
   font-style: italic;
   background-color: #fff;
@@ -283,7 +285,7 @@
   padding-right: 0;
 }
 .project2 .feedback {
-  left: 45%;
+  left: 65%;
 }
 
 .product-idea {
@@ -337,6 +339,7 @@
   gap: 1rem;
   margin-top: -50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
   z-index: 999;
 }
 .floating-div h1 {
