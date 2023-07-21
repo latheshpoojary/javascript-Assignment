@@ -241,7 +241,7 @@
 }
 .project-list .feedback {
   position: absolute;
-  width: 30%;
+  width: min(400px, 30%);
   left: 20%;
   top: 70%;
   padding: 1rem;
@@ -280,6 +280,7 @@
 .project2 {
   flex-direction: row-reverse;
   padding-left: 4rem;
+  padding-right: 0;
 }
 .project2 .feedback {
   left: 45%;
@@ -328,6 +329,7 @@
 }
 
 .floating-div {
+  position: absolute;
   width: 90%;
   padding: 2rem 8rem;
   display: flex;
@@ -335,6 +337,7 @@
   gap: 1rem;
   margin-top: -50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 999;
 }
 .floating-div h1 {
   font-size: 2rem;
@@ -343,6 +346,117 @@
 }
 .floating-div a {
   color: yellow;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 8rem 6rem;
+  padding-bottom: 0;
+  padding-top: 15rem;
+  border: 1px solid red;
+  background-color: darkolivegreen;
+  background-image: url(./image/footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .owner-details {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+footer .owner-details label {
+  text-transform: capitalize;
+}
+footer .owner-details h3 {
+  color: white;
+}
+footer .owner-details .phone, footer .owner-details .address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .help-desk {
+  display: flex;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+}
+footer .property {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  width: 65%;
+  border-right: 1px solid grey;
+}
+footer .property .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .property .feature .header {
+  color: white;
+}
+footer .property .feature .header h3 {
+  font-size: 1rem;
+}
+footer .property .feature .desc p {
+  color: rgb(223, 219, 219);
+  line-height: 2rem;
+}
+footer .social-media {
+  width: 40%;
+  padding-left: 3rem;
+  padding-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .social-media h3 {
+  color: white;
+}
+footer .social-media p {
+  line-height: 1.5rem;
+  color: rgb(223, 219, 219);
+}
+footer .social-media .media {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .social-media .media .logoes {
+  display: flex;
+  gap: 2rem;
+}
+footer .social-media .media .logoes img {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: grey;
+}
+footer .social-media .media .logoes img:nth-child(3) {
+  background-color: yellow;
+}
+footer .bottom-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+footer .bottom-footer .logo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+footer .bottom-footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+footer .bottom-footer .copyright {
+  width: 30%;
 }
 
 @media (max-width: 768px) {
@@ -374,39 +488,66 @@
   }
   .promotion .project-details .comment {
     width: 90%;
-    left: 0;
   }
-  .project-list {
+  .project-list, .project-list.project2 {
     padding-right: 0;
     margin-bottom: 0;
+    padding-left: 0;
   }
-  .project-list .image-field {
+  .project-list .image-field, .project-list.project2 .image-field {
     width: 100%;
   }
-  .project-list .project-details {
+  .project-list .project-details, .project-list.project2 .project-details {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding: 2rem 3rem;
   }
-  .project-list .project-details .details {
+  .project-list .project-details .details, .project-list.project2 .project-details .details {
     margin-bottom: 0;
   }
-  .project-list .feedback {
+  .project-list .feedback, .project-list.project2 .feedback {
     width: 75%;
     top: 20%;
   }
   .project2 .feedback {
     left: 5%;
   }
+  .product-idea {
+    padding: 2rem 3rem 6rem 3rem;
+  }
   .product-idea .title {
     width: 100%;
+  }
+  .product-idea .boxes {
+    justify-content: center;
   }
   .floating-div {
     padding: 2rem 3rem;
   }
   .floating-div h1 {
     width: 100%;
+  }
+  footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  footer .owner-details {
+    gap: 2rem;
+  }
+  footer .owner-details .phone, footer .owner-details .address {
+    width: 50%;
+  }
+  footer .help-desk {
+    display: block;
+    justify-content: center;
+  }
+  footer .help-desk .property {
+    width: 100%;
+    border: none;
+  }
+  footer .help-desk .social-media {
+    width: 100%;
+    padding: 1rem 0;
   }
 }/*# sourceMappingURL=style.css.map */
